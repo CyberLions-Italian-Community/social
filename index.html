@@ -1,41 +1,142 @@
 <!DOCTYPE html>
-
-<!--
-
-DarkMode template by LinkFree
-
-https://github.com/MichaelBarney/LinkFree/tree/master/Templates/DarkMode
-
--->
-
 <html lang="it">
-  <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta charset="UTF-8">
-      <title>Social - Cyberlions Italian Community</title>
-      <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-  </head>
 
-  <body>
-      <img id="userPhoto" src="/images/CL_square.jpg" alt="Cyberlions Italian Community">
-      <a href="https://www.instagram.com/cyberlionsita" id="userName" target="_blank">@cyberlionsita</a>
+<head>
 
-      <div id="links">
-          <a class="link" href="https://cyberlions-ita.eu" target="_blank">🌐 Sito web</a>
-          <a class="link" href="https://www.facebook.com/cyberlionsita" target="_blank">👍🏻 Facebook</a>
-          <a class="link" href="https://t.me/cyberlions" target="_blank">💬 Canale Telegram</a>
-          <a class="link" href="https://cyberlions-ita.forumcommunity.net/" target="_blank">🗣️ Forum</a>
-          <a class="link" href="ts3server://ts.cyberlions-ita.eu" target="_blank">🎧 🎤 Server TeamSpeak</a>
-          <a class="link" href="https://discord.gg/efbBT5ycwx" target="_blank">🎧 🎤 Server Discord</a>
-          <a class="link" href="https://steamcommunity.com/groups/CyberLionsITA" target="_blank">🎮 Gruppo Steam</a>
-          <a class="link" href="https://github.com/CyberLions-Italian-Community" target="_blank">🧑🏻‍💻 GitHub</a>
+  <!-- Page Information
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Social - CyberLions Italian Community</title>
+  <meta name="description" content="Social - CyberLions Italian Community">
+  <meta name="author" content="CyberLions Italian Community">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Themes:
+            Auto:   css/skeleton-auto.css
+            Light:  css/skeleton-light.css
+            Dark:   css/skeleton-dark.css
+     -->
+    <link rel="stylesheet" href="css/skeleton-auto.css">
+
+    <!-- Brand Styles -->
+    <link rel="stylesheet" href="css/brands.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 10%">
+
+        <!-- 
+
+          ## Getting Started with LittleLink
+
+          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
+
+          You can add your own brand or others brands you may need in the `css/brands.css` file. 
+
+          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
+
+          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
+
+          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
+
+          Edit the "Short Bio" section tell users about yourself or your brand.
+
+        -->
+
+        <!-- Your Image Here -->
+        <img src="images/CL_square.jpg" class="avatar" alt="">
+
+        <!-- Title -->
+        <h1 role="heading">CyberLions Italian Community</h1>
+
+        <!-- Short Bio -->
+        <p>Your gaming family</p>
+
+        <!--
+
+          ## Breaking down <a> attributes:
+          
+          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
+          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
+          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
+
+          2.) Replace the # in href="#" with the desired target URL for the button.
+
+          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
+
+          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
+          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
+
+          5.) role="button" | The button role identifies an element as a button to assistive technology such as screen readers.
+
+          ## Breaking down the <img> attributes:
+          
+          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
+
+          2.) src="images/icons/[icon-name].svg" | This defines the icon you would like to display from the 'images/icons/' folder. For example, you can change this to src="images/icons/discord.svg" to use the Discord icon.
+          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
+
+          3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
+          This can improve the experience for assistive technology users by hiding what is essentially duplicated
+
+        -->
+
+        <!-- Discord -->
+        <a class="button button-discord" href="https://discord.gg/efbBT5ycwx" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/discord.svg" alt="">Discord</a><br>
+
+        <!-- Facebook -->
+        <a class="button button-faceb" href="https://www.facebook.com/cyberlionsita" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/facebook.svg" alt="">Facebook</a><br>
+
+        <!-- GitHub -->
+        <a class="button button-github" href="https://github.com/CyberLions-Italian-Community" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/github.svg" alt="">GitHub</a><br>
+
+        <!-- Instagram -->
+        <a class="button button-instagram" href="https://instagram.com/CyberLionsITA" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a><br>
+        
+        <!-- Steam -->
+        <a class="button button-steam" href="https://steamcommunity.com/groups/CyberLionsITA" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/steam.svg" alt="">Gruppo Steam</a><br>
+
+        <!-- Server TeamSpeak -->
+        <a class="button button-default" href="ts3server://ts.cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-cloud.svg" alt="">Server TeamSpeak</a><br>
+
+        <!-- Telegram -->
+        <a class="button button-telegram" href="https://t.me/cyberlions" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/telegram.svg" alt="">Telegram</a><br>
+
+        <!-- Forum -->
+        <a class="button button-default" href="https://cyberlions-ita.forumcommunity.net/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-blog.svg" alt="">Forum</a><br>
+
+        <!-- Email -->
+        <a class="button button-default" href="mailto:support@cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-email.svg" alt="">Email</a><br>
+
+        <!-- Sito web -->
+        <a class="button button-default" href="https://cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-website.svg" alt="">Sito web</a><br>
+
+        <br>
       </div>
+    </div>
+  </div>
 
-      <!-- Javascript -->
-      <script src='../assets/js/jquery.min.js'></script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 
-      <!-- Stylesheet -->
-      <link rel="stylesheet" href="style.css">
-
-  </body>
 </html>
