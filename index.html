@@ -1,142 +1,107 @@
 <!DOCTYPE html>
-<html lang="it">
 
-<head>
+<!-- 
+  To change the theme, change the class on the html tag below to one of:
+  - theme-auto: Automatically switches based on user's system preferences
+  - theme-light: Forces light theme
+  - theme-dark: Forces dark theme
+-->
 
-  <!-- Page Information
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Social - CyberLions Italian Community</title>
-  <meta name="description" content="Social - CyberLions Italian Community">
-  <meta name="author" content="CyberLions Italian Community">
+<html class="theme-auto" lang="it"> <!-- Update`class="theme-auto" with your preference -->
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-
-    <!-- Themes:
-            Auto:   css/skeleton-auto.css
-            Light:  css/skeleton-light.css
-            Dark:   css/skeleton-dark.css
-     -->
-    <link rel="stylesheet" href="css/skeleton-auto.css">
-
-    <!-- Brand Styles -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
+    <title>Social - CyberLions Italian Community</title>
+    <link rel="icon" type="image/x-icon" href="images/avatar.jpg"> <!-- Update this with your own favicon -->
+    
+    <!-- Meta Description - Write a description (150-160 characters recommended) -->
+    <meta name="description" content="CyberLions Italian Community - Your Gaming Family">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="your name, industry, and specialties">
+    
+    <!-- Canonical URL - Helps prevent duplicate content issues -->
+    <meta rel="canonical" href="https://cyberlions-ita.eu">
+    
+    <!-- Author Information -->
+    <meta name="author" content="CyberLions Italian Community">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
 
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.ico">
-
-</head>
+  </head>
 
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
+    <div class="container">
+        <div class="column">
 
-        <!-- 
+            <!-- 
+              By default, the Avatar is rounded. Use the following:
+              - avatar--rounded: Automatically rounds the image
+              - avatar--soft: Slightly rounds the image
+              - avatar--none: Removes any rounding
 
-          ## Getting Started with LittleLink
+              Be sure to replace the src with your own image path and update the alt text
+            -->
+            <img class="avatar avatar--rounded" src="images/avatar.jpg" srcset="images/avatar@2x.jpg 2x" alt="CyberLions Italian Community Logo">
 
-          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
+            <!-- Replace with your name or brand -->
+            <h1 tabindex="0">
+              <div>CyberLions Italian Community</div>
+            </h1>
 
-          You can add your own brand or others brands you may need in the `css/brands.css` file. 
+            <!-- Add a short description about yourself or your brand -->
+            <p tabindex="0">Your gaming family</p>
 
-          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
+            <!-- All your buttons go here -->
+            <div class="button-stack" role="navigation">
 
-          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
+              <!-- Discord -->
+              <a class="button button-discord" href="https://discord.gg/efbBT5ycwx" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">Discord</a>
 
-          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
+              <!-- Facebook -->
+              <a class="button button-faceb" href="https://www.facebook.com/cyberlionsita" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Facebook</a>
 
-          Edit the "Short Bio" section tell users about yourself or your brand.
+              <!-- GitHub -->
+              <a class="button button-github" href="https://github.com/CyberLions-Italian-Community" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
 
-        -->
+              <!-- Instagram -->
+              <a class="button button-instagram" href="https://instagram.com/CyberLionsITA" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
 
-        <!-- Your Image Here -->
-        <img src="images/CL_square.jpg" class="avatar" alt="">
+              <!-- Server TeamSpeak -->
+              <a class="button button-default" href="ts3server://ts.cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-cloud.svg" alt="Cloud Icon">Server TeamSpeak</a>
 
-        <!-- Title -->
-        <h1 role="heading">CyberLions Italian Community</h1>
+              <!-- Steam -->
+              <a class="button button-steam" href="https://steamcommunity.com/groups/CyberLionsITA" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/steam.svg" alt="Steam Logo">Gruppo Steam</a>
 
-        <!-- Short Bio -->
-        <p>Your gaming family</p>
+              <!-- Telegram -->
+              <a class="button button-telegram" href="https://t.me/cyberlions" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a>
 
-        <!--
+              <!-- Forum -->
+              <a class="button button-default" href="https://cyberlions-ita.forumcommunity.net" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Blog Icon">Forum</a>
 
-          ## Breaking down <a> attributes:
-          
-          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
-          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
-          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
+              <!-- Email -->
+              <a class="button button-default" href="mailto:support@cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email</a>
 
-          2.) Replace the # in href="#" with the desired target URL for the button.
+              <!-- Sito web -->
+              <a class="button button-default" href="https://cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Sito web</a>
 
-          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
-
-          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
-          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
-
-          5.) role="button" | The button role identifies an element as a button to assistive technology such as screen readers.
-
-          ## Breaking down the <img> attributes:
-          
-          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
-
-          2.) src="images/icons/[icon-name].svg" | This defines the icon you would like to display from the 'images/icons/' folder. For example, you can change this to src="images/icons/discord.svg" to use the Discord icon.
-          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
-
-          3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
-          This can improve the experience for assistive technology users by hiding what is essentially duplicated
-
-        -->
-
-        <!-- Discord -->
-        <a class="button button-discord" href="https://discord.gg/efbBT5ycwx" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/discord.svg" alt="">Discord</a><br>
-
-        <!-- Facebook -->
-        <a class="button button-faceb" href="https://www.facebook.com/cyberlionsita" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/facebook.svg" alt="">Facebook</a><br>
-
-        <!-- GitHub -->
-        <a class="button button-github" href="https://github.com/CyberLions-Italian-Community" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/github.svg" alt="">GitHub</a><br>
-
-        <!-- Instagram -->
-        <a class="button button-instagram" href="https://instagram.com/CyberLionsITA" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a><br>
-        
-        <!-- Steam -->
-        <a class="button button-steam" href="https://steamcommunity.com/groups/CyberLionsITA" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/steam.svg" alt="">Gruppo Steam</a><br>
-
-        <!-- Server TeamSpeak -->
-        <a class="button button-default" href="ts3server://ts.cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-cloud.svg" alt="">Server TeamSpeak</a><br>
-
-        <!-- Telegram -->
-        <a class="button button-telegram" href="https://t.me/cyberlions" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/telegram.svg" alt="">Telegram</a><br>
-
-        <!-- Forum -->
-        <a class="button button-default" href="https://cyberlions-ita.forumcommunity.net/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-blog.svg" alt="">Forum</a><br>
-
-        <!-- Email -->
-        <a class="button button-default" href="mailto:support@cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-email.svg" alt="">Email</a><br>
-
-        <!-- Sito web -->
-        <a class="button button-default" href="https://cyberlions-ita.eu" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-website.svg" alt="">Sito web</a><br>
-
-        <br>
       </div>
+        
+      <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
+      <footer>
+        Created with <a href="https://github.com/sethcottle/littlelink" target="_blank" rel="noopener">LittleLink</a>
+      </footer>
+    
     </div>
   </div>
 
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
 </html>
