@@ -257,6 +257,8 @@ a:hover {
   }
 :root.theme-dark body {
 	background-color:#121212;
+	background-image: url("/images/bg.jpg");
+	background-size: 100% 100%;
 	color:#ffffff;
 }
 :root.theme-dark a:not(.button) {
